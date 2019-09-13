@@ -17,28 +17,38 @@
                 <div class="card-title"> calculatrice</div>
             </div>
             <div class="card-body">
-                <form action="/calculate" method="POST" class="form-inline">
-                    <input type="number" name="chiffre1" id="chiffre1" class="form-control m-2">
+
+                <form action="/calculate" method="POST" class="form">
+
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <input type="number" name="chiffre1" id="chiffre1" class="form-control m-2">
+                            <input type="number" name="chiffre2" id="chiffre2" class="form-control m-2">
+                        </div>
+                        <div class="col-sm-">
+                            <div class="form-check m-2">
+                                <input type="radio" name="signe" id="plus" value="+" class="form-check-input">
+                                <label for="plus" class="form-check-label">+</label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input type="radio" name="signe" id="moins" value="-" class="form-check-input">
+                                <label for="moins" class="form-check-label">-</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <div class="form-check m-2">
+                                <input type="radio" name="signe" id="mutiplier" value="*" class="form-check-input">
+                                <label for="multiplier" class="form-check-label">x</label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input type="radio" name="signe" id="diviser" value="/" class="form-check-input">
+                                <label for="diviser" class="form-check-label">:</label>
+                            </div>
+                            <input type="submit" value="calculer" class="btn btn-primary">
+                        </div>
+                    </div>
 
 
-                    <div class="form-check m-2">
-                        <input type="radio" name="signe" id="plus" value="+" class="form-check-input">
-                        <label for="plus" class="form-check-label">+</label>
-                    </div>
-                    <div class="form-check m-2">
-                        <input type="radio" name="signe" id="moins" value="-" class="form-check-input">
-                        <label for="moins" class="form-check-label">-</label>
-                    </div>
-                    <div class="form-check m-2">
-                        <input type="radio" name="signe" id="mutiplier" value="*" class="form-check-input">
-                        <label for="multiplier" class="form-check-label">x</label>
-                    </div>
-                    <div class="form-check m-2">
-                        <input type="radio" name="signe" id="diviser" value="/" class="form-check-input">
-                        <label for="diviser" class="form-check-label">:</label>
-                    </div>
-                    <input type="number" name="chiffre2" id="chiffre2" class="form-control m-2">
-                    <input type="submit" value="calculer" class="btn btn-primary">
                 </form>
             </div>
             <div class="card-footer">
