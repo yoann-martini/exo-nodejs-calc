@@ -1,0 +1,17 @@
+{
+  "name": "exo-4",
+  "version": "1.0.0",
+  "description": "formulaire addition",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "moi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
